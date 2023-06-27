@@ -4,42 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" type="text/css"></link>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script.js" defer></script>
     <title>Tic Tac Toe</title>
   </head>
   <body>
     <div class="container">
       <div class="header">
-        <h1>Tic Tac Toe</h1>
+        <div>Tic Tac Toe</div>
       </div>
       <div class="body">
         <div class="pre-game-interface">
-          <div class="game-mode-btn">
-            <button id="vsPlayerBtn">VS Player</button>
-            <button id="vsComputerBtn">VS Computer</button>
+          <div class="game-mode">
+            <button class="game-mode-btn" id="vsPlayerBtn">VS Player</button>
+            <button class="game-mode-btn" id="vsComputerBtn" disabled>VS Computer</button>
           </div>
         </div>
-        <div class="game-interface">
-          <table>
-            <tr class="first row">
-              <td>ads</td>
-              <td>sad</td>
-              <td>asd</td>
-            </tr>
-            <tr class="second row">
-              <td>sadf</td>
-              <td>asd</td>
-              <td>sad</td>
-            </tr>
-            <tr class="third row">
-              <td>as</td>
-              <td>ads</td>
-              <td>as</td>
-            </tr>
-          </table>
-          <div class="game-ctrl-btn">
-            <button id="return">Return</button>
-            <button id="replay">Play Again</button>
+        <div class="game-interface game-display">
+          <div class="game-board">
+              <table>
+                <tr class="first row">
+                    <td>O</td>
+                    <td>X</td>
+                    <td>O</td>
+                </tr>
+                <tr class="second row">
+                    <td>O</td>
+                    <td>X</td>
+                    <td>O</td>
+                </tr>
+                <tr class="third row">
+                  <td>O</td>
+                  <td>X</td>
+                  <td>O</td>
+                </tr>
+              </table>
+          </div>
+          <div class="game-ctrl">
+            <button class="game-ctrl-btn" id="return">Return</button>
+            <button class="game-ctrl-btn" id="replay">Play Again</button>
           </div>
         </div>
       </div>
