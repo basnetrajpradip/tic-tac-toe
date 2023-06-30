@@ -173,6 +173,8 @@ const ScreenController = (() => {
   returnToPreGame.addEventListener("click", (e) => {
     preGameUI.classList.remove("pre-game-display");
     gameUI.classList.add("game-display");
+    inputs[0].value = "";
+    inputs[3].value = "";
     clearScreen(e);
   });
 
