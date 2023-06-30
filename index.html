@@ -22,23 +22,24 @@
         <div class="game-interface game-display">
           <div class="game-board">
               <table>
-                <tr class="first row">
-                    <td>O</td>
-                    <td>X</td>
-                    <td>O</td>
+                <tr class="first row" data-row="0">
+                    <td data-col="0"></td>
+                    <td data-col="1"></td>
+                    <td data-col="2"></td>
                 </tr>
-                <tr class="second row">
-                    <td>O</td>
-                    <td>X</td>
-                    <td>O</td>
+                <tr class="second row" data-row="1">
+                  <td data-col="0"></td>
+                  <td data-col="1"></td>
+                  <td data-col="2"></td>
                 </tr>
-                <tr class="third row">
-                  <td>O</td>
-                  <td>X</td>
-                  <td>O</td>
+                <tr class="third row" data-row="2">
+                  <td data-col="0"></td>
+                  <td data-col="1"></td>
+                  <td data-col="2"></td>
                 </tr>
               </table>
           </div>
+          <div class="game-result"></div>
           <div class="game-ctrl">
             <button class="game-ctrl-btn" id="return">Return</button>
             <button class="game-ctrl-btn" id="replay">Play Again</button>

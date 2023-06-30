@@ -25,7 +25,7 @@ body {
   font-size: 8rem;
   font-weight: 600;
   margin-top: 5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: center;
 }
@@ -51,6 +51,12 @@ td {
   font-family: header;
   font-size: 3rem;
   color: rgb(0, 0, 0);
+  width: 33.33%;
+}
+
+tr {
+  height: 33.33%;
+  width: 33.33%;
 }
 
 .pre-game-interface {
@@ -84,7 +90,7 @@ button[disabled] {
 }
 
 .game-ctrl {
-  margin-top: 3rem;
+  margin-top: 0.5rem;
   display: flex;
   gap: 3rem;
 }
@@ -100,12 +106,17 @@ button[disabled] {
   background-color: var(--button);
 }
 
+.game-result {
+  font-size: 3rem;
+  margin-top: 0.5rem;
+}
+
 .game-interface {
   margin-top: 0rem;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .pre-game-display {
