@@ -22,7 +22,7 @@ body {
 
 .header {
   color: var(--header);
-  font-size: 8rem;
+  font-size: 7rem;
   font-weight: 600;
   margin-top: 5rem;
   margin-bottom: 1rem;
@@ -32,7 +32,7 @@ body {
 
 table {
   border-collapse: collapse;
-  height: 30rem;
+  height: 28rem;
   width: 30rem;
 }
 
@@ -71,17 +71,6 @@ tr {
   gap: 2rem;
 }
 
-.game-mode-btn {
-  height: 4rem;
-  width: 10rem;
-  font-size: 1.2rem;
-  font-family: header;
-  font-weight: 600;
-  border-radius: 30%;
-  color: var(--header);
-  background-color: var(--button);
-}
-
 button:disabled,
 button[disabled] {
   border: 2px solid #aca9a9;
@@ -95,14 +84,16 @@ button[disabled] {
   gap: 3rem;
 }
 
-.game-ctrl-btn {
+.game-mode-btn,
+.game-ctrl-btn,
+#play {
   height: 4rem;
   width: 10rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-family: header;
   font-weight: 600;
   border-radius: 30%;
-  color: var(--header);
+  font-weight: bold;
   background-color: var(--button);
 }
 
@@ -116,7 +107,50 @@ button[disabled] {
   display: flex;
   align-items: center;
   flex-direction: column;
+  gap: 0.5rem;
+}
+
+.player-selection-interface {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+form {
+  display: flex;
+  gap: 5rem;
+  position: relative;
+}
+
+input[type="text"] {
+  height: 2rem;
+  text-align: center;
+  font-family: header;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: var(--button);
+}
+
+.marker-radio {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: bold;
   gap: 1rem;
+  justify-content: center;
+}
+
+.marker-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+form > .player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .pre-game-display {
@@ -125,4 +159,39 @@ button[disabled] {
 
 .game-display {
   display: none;
+}
+
+.player-selection-display {
+  display: none;
+}
+
+.active-player {
+  display: flex;
+  gap: 60rem;
+  font-size: 2rem;
+}
+
+.active {
+  text-align: center;
+  border-bottom: 8px solid rgb(19, 172, 19);
+  position: relative;
+  width: 10rem;
+}
+
+.active::after {
+  content: "Your Turn Now";
+  font-size: 1.1rem;
+  top: 3rem;
+  left: 1.5rem;
+  position: absolute;
+}
+
+.one::after {
+  content: "VS";
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  left: 19.6rem;
+  bottom: 3.5rem;
 }

@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="header">
+      <div class="header player-header">
         <div>Tic Tac Toe</div>
       </div>
       <div class="body">
@@ -19,7 +19,36 @@
             <button class="game-mode-btn" id="vsComputerBtn" disabled>VS Computer</button>
           </div>
         </div>
-        <div class="game-interface game-display">
+        <div class="player-selection-interface player-selection-display">
+          <form id="playerinfo-form">
+            <div class="player one">
+              <div class="player-name"><input type="text" id="playerOne" placeholder="Player 1 Name" required></div>
+              <div class="marker-container">
+                <div class="marker-text">Select Marker</div>
+                <div class="marker-radio">
+                  <label for="marker"><input type="radio" id="markerX" name="marker1" value="X" checked>X</label>
+                  <label for="marker"><input type="radio" id="markerO" name="marker1" value="O">O</label>
+                </div>
+              </div>
+            </div>
+            <div class="player">
+              <div class="player-name"><input type="text" id="playerTwo" placeholder="Player 2 Name" required></div>
+              <div class="marker">
+                <div class="marker-text">Select Marker</div>
+                <div class="marker-radio">
+                  <label for="marker"><input type="radio" id="markerX" name="marker2" value="X">X</label>
+                  <label for="marker"><input type="radio" id="markerO" name="marker2" value="O" checked>O</label>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="play-btn"><button  id="play">Play</button></div>
+        </div>
+        <div class="game-interface game-display ">
+          <div class="active-player">
+            <div class="player1 active">Player1</div>
+            <div class="player2">Player2</div>
+          </div>
           <div class="game-board">
               <table>
                 <tr class="first row" data-row="0">
